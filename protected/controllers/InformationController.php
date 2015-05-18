@@ -51,6 +51,9 @@ class InformationController extends Controller
 		if(isset($_POST['Information']))
 		{
 			$model->attributes=$_POST['Information'];
+                        
+                        $t=time();
+                        $model->time=date("Y-m-d",$t); 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

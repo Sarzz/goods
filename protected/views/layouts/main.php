@@ -29,9 +29,8 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
                                 array('label'=>'View', 'url'=>array('/information/index')),
-				
+                                array('label'=>'Create', 'url'=>array('/information/create')),
 			),
 		)); ?>
 	</div><!-- mainmenu -->

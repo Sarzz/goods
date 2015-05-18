@@ -9,8 +9,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Information', 'url'=>array('index')),
-	array('label'=>'Create Information', 'url'=>array('create')),
+	
 	array('label'=>'View Information', 'url'=>array('view', 'id'=>$model->id)),
 	
 );

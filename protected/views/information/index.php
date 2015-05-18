@@ -6,10 +6,7 @@ $this->breadcrumbs=array(
 	'Informations',
 );
 
-$this->menu=array(
-	array('label'=>'Create Information', 'url'=>array('create')),
-	
-);
+
 ?>
 
 <h1>Informations</h1>
