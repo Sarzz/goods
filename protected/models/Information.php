@@ -31,10 +31,10 @@ class Information extends CActiveRecord
 		return array(
 			array('full_name, title, description, email, number', 'required'),
 			array('number', 'numerical', 'integerOnly'=>true),
-			array('full_name, title, email', 'length', 'max'=>256),
+			array('full_name, title, time, email', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, full_name, title, description, email, number', 'safe', 'on'=>'search'),
+			array('id, full_name, title, time, description, email, number', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,6 +61,7 @@ class Information extends CActiveRecord
 			'description' => 'Description',
 			'email' => 'Email',
 			'number' => 'Number',
+                        'time' => 'Date',
 		);
 	}
 
@@ -88,6 +89,7 @@ class Information extends CActiveRecord
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('number',$this->number);
+                $criteria->compare('time',$this->time);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

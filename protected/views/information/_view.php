@@ -29,5 +29,8 @@
 	<?php echo CHtml::encode($data->number); ?>
 	<br />
 
+        <b><?php echo CHtml::encode($data->getAttributeLabel('time')); ?>:</b>
+	<?php echo CHtml::encode($data->time); ?>
+	<br />
 
 </div>
