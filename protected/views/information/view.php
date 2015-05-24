@@ -27,5 +27,6 @@ $this->menu=array(
 		'email',
 		'number',
                 'time',
+                'image',
 	),
 )); ?>

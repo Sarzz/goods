@@ -52,6 +52,10 @@ class InformationController extends Controller
 		{
 			$model->attributes=$_POST['Information'];
                         
+                        $uploadedFile=CUploadedFile::getInstance($model,'image');
+                        $fileName = "$uploadedFile";
+                        $model->image = $fileName;
+                        
                         $t=time();
                         $model->time=date("Y-m-d",$t); 
 			if($model->save())
@@ -78,6 +82,12 @@ class InformationController extends Controller
 		if(isset($_POST['Information']))
 		{
 			$model->attributes=$_POST['Information'];
+                        
+                            $uploadedFile=CUploadedFile::getInstance($model,'image');
+                            if(!$uploadedFile){
+                        $fileName = "$uploadedFile";
+                        $model->image = $fileName;
+                        }
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
