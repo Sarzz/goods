@@ -1,0 +1,195 @@
+2015/05/21 13:29:26 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:29 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:30 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:30 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:31 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:31 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/index.php?r=site/index
+HTTP_REFERER=http://localhost/goods/index.php?r=information/index
+---
+2015/05/21 13:29:36 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/
+---
+2015/05/21 13:32:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\goods\protected\controllers\SiteController.php(28): CController->render('index')
+#2 C:\xampp\htdocs\goods\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\goods\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\goods\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goods/
+---
+2015/05/21 14:16:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goods/
+---
+2015/05/21 14:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\goods\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goods/
+---
+2015/05/21 14:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in C:\xampp\htdocs\goods\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/goods/
+---
+2015/05/21 14:19:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/index".' in C:\xampp\htdocs\goods\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController('information/ind...')
+#1 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\goods\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/goods/index.php?r=information/index
+HTTP_REFERER=http://localhost/goods/
+---
+2015/05/21 15:49:42 [error] [php] Undefined variable: rnd (C:\xampp\htdocs\goods\protected\controllers\InformationController.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\filters\CFilterChain.php(133): InformationController->runAction()
+#1 C:\xampp\htdocs\goods\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\goods\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\goods\framework\web\filters\CInlineFilter.php(58): InformationController->filterAccessControl()
+#4 C:\xampp\htdocs\goods\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\goods\framework\web\CController.php(265): InformationController->runActionWithFilters()
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): InformationController->run()
+#8 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\goods\index.php(13): CWebApplication->run()
+REQUEST_URI=/goods/index.php?r=information/create
+in C:\xampp\htdocs\goods\protected\controllers\InformationController.php (56)
+in C:\xampp\htdocs\goods\index.php (13)
+2015/05/21 15:50:43 [error] [php] Undefined variable: rnd (C:\xampp\htdocs\goods\protected\controllers\InformationController.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\goods\framework\web\filters\CFilterChain.php(133): InformationController->runAction()
+#1 C:\xampp\htdocs\goods\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\goods\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\goods\framework\web\filters\CInlineFilter.php(58): InformationController->filterAccessControl()
+#4 C:\xampp\htdocs\goods\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\goods\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\goods\framework\web\CController.php(265): InformationController->runActionWithFilters()
+#7 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(282): InformationController->run()
+#8 C:\xampp\htdocs\goods\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\goods\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\goods\index.php(13): CWebApplication->run()
+REQUEST_URI=/goods/index.php?r=information/create
+in C:\xampp\htdocs\goods\protected\controllers\InformationController.php (56)
+in C:\xampp\htdocs\goods\index.php (13)

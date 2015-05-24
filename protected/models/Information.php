@@ -10,6 +10,7 @@
  * @property string $description
  * @property string $email
  * @property integer $number
+ * @property string $image
  */
 class Information extends CActiveRecord
 {
@@ -31,10 +32,11 @@ class Information extends CActiveRecord
 		return array(
 			array('full_name, title, description, email, number', 'required'),
 			array('number', 'numerical', 'integerOnly'=>true),
-			array('full_name, title, time, email', 'length', 'max'=>256),
+			array('full_name, image, title, time, email', 'length', 'max'=>256),
+                        array('image', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, full_name, title, time, description, email, number', 'safe', 'on'=>'search'),
+			array('id, full_name, image, title, time, description, email, number', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +64,7 @@ class Information extends CActiveRecord
 			'email' => 'Email',
 			'number' => 'Number',
                         'time' => 'Date',
+                        'image' => 'Image',
 		);
 	}
 
@@ -90,6 +93,7 @@ class Information extends CActiveRecord
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('number',$this->number);
                 $criteria->compare('time',$this->time);
+                $criteria->compare('image',$this->image);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
