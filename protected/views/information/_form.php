@@ -3,6 +3,7 @@
 /* @var $model Information */
 /* @var $form CActiveForm */
 //form options array...
+
 ?>
 
 <div class="form">
@@ -30,6 +31,28 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'location'); ?>
+		<?php
+                $records = Location::model()->findAll(array('order' => 'location'));
+                $lis = CHtml::listData($records, 'id','location');
+                echo CHtml::dropDownList('location', null, $lis, array('empty' => 'Select Location'));
+                ?>
+		<?php echo $form->error($model,'location'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'phone'); ?>
+		<?php
+                $records = Phone::model()->findAll(array('order' => 'phone'));
+                $list = CHtml::listData($records, 'id','phone');
+                echo CHtml::dropDownList('phone', null, $list, array('empty' => 'Select Model'));
+                ?>
+		<?php echo $form->error($model,'phone'); ?>
+	</div>
+
+	
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>256)); ?>
 		<?php echo $form->error($model,'title'); ?>
@@ -53,15 +76,16 @@
 		<?php echo $form->error($model,'number'); ?>
 	</div>
         
-        <div class="row">
-                <?php echo $form->labelEx($model,'image'); ?>
-                <?php echo CHtml::activeFileField($model, 'image'); ?>
-                <?php echo $form->error($model,'image'); ?>
-        </div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'image'); ?>
+        <?php echo CHtml::activeFileField($model, 'image'); /* by this we can upload image */ ?>  
+        <?php echo $form->error($model,'image'); ?>
+	</div>
+		<?php if($model->isNewRecord!='1'){ ?>
+	<div class="row">
+	     <?php echo CHtml::image(Yii::app()->request->baseUrl.'/banner/'.$model->image,"image",array("width"=>200)); } /* Image shown here if page is update page */ ?>  
+	</div>
         
-        <div class="row">
-        <?php echo CHtml::image(Yii::app()->request->baseUrl.'/banner/'.$model->image,"image",array("width"=>"400px"));  ?>
-        </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

@@ -7,7 +7,7 @@ class InformationController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
-
+	
 	/**
 	 * @return array action filters
 	 */
@@ -44,23 +44,36 @@ class InformationController extends Controller
 	public function actionCreate()
 	{
 		$model=new Information;
+		
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Information']))
 		{
+			$rnd = rand(0,9999);  // generate random number between 0-9999
 			$model->attributes=$_POST['Information'];
+            
+            $uploadedFile=CUploadedFile::getInstance($model,'image');
+            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name
+            $model->image = $fileName;
+
+            $phone = Phone::model()->findByPk($_POST['phone']);
+            $model->phone = $phone->phone;
+
+            $location = Location::model()->findByPk($_POST['location']);
+            $model->location = $location->location;
+            
                         
-                        $uploadedFile=CUploadedFile::getInstance($model,'image');
-                        $fileName = "$uploadedFile";
-                        $model->image = $fileName;
-                        
-                        $t=time();
-                        $model->time=date("Y-m-d",$t); 
-			if($model->save())
+            $t=time();
+            $model->time=date("Y-m-d",$t); 
+			if($model->save()){
+				$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                
+			}
 				$this->redirect(array('view','id'=>$model->id));
-		}
+			}
+		
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -81,15 +94,18 @@ class InformationController extends Controller
 
 		if(isset($_POST['Information']))
 		{
+			$_POST['Information']['image'] = $model->image;
 			$model->attributes=$_POST['Information'];
                         
-                            $uploadedFile=CUploadedFile::getInstance($model,'image');
-                            if(!$uploadedFile){
-                        $fileName = "$uploadedFile";
-                        $model->image = $fileName;
-                        }
-			if($model->save())
+            $uploadedFile=CUploadedFile::getInstance($model,'image');
+                            
+			if($model->save()){
+				 if(!empty($uploadedFile))  // check if uploaded file is set or not
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$model->image);
+                }
 				$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		$this->render('update',array(
@@ -116,9 +132,18 @@ class InformationController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Information');
+		$dataProvider=new CActiveDataProvider('Information', array(
+		    'criteria'=>array(
+		    'order'=>'id DESC',
+		    ),
+		    'pagination'=>array(
+		    'pageSize'=>15,
+		    ),
+	   ));
+		
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+
 		));
 	}
 
