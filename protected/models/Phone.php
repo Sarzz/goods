@@ -1,25 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "information".
+ * This is the model class for table "model".
  *
- * The followings are the available columns in table 'information':
+ * The followings are the available columns in table 'model':
  * @property integer $id
- * @property string $full_name
- * @property string $title
- * @property string $description
- * @property string $email
- * @property integer $number
- * @property string $image
+ * @property string $model
  */
-class Information extends CActiveRecord
+class Phone extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'information';
+		return 'phone';
 	}
 
 	/**
@@ -30,14 +25,11 @@ class Information extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('full_name, title, description, email, number', 'required'),
-			array('number', 'numerical', 'integerOnly'=>true),
-			array('full_name, phone, location, image, title, time, email', 'length', 'max'=>256, 'on'=>'insert,update'),
-			// @todo Please remove those attributes that should not be searched.
-            array('image', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
-			
+			array('model', 'required'),
+			array('model', 'length', 'max'=>256),
 			// The following rule is used by search().
-			array('id, full_name, image, title, time, description, email, number', 'safe', 'on'=>'search'),
+			// @todo Please remove those attributes that should not be searched.
+			array('id, model', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,15 +51,7 @@ class Information extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'full_name' => 'Full Name',
-			'title' => 'Title',
-			'description' => 'Description',
-			'email' => 'Email',
-			'number' => 'Number',
-            'time' => 'Date',
-            'image' => 'Image',
-            'phone' => 'Model',
-            'location' => 'Location',
+			'phone' => 'Phone',
 		);
 	}
 
@@ -90,15 +74,7 @@ class Information extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('full_name',$this->full_name,true);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('description',$this->description,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('number',$this->number);
-        $criteria->compare('time',$this->time);
-        $criteria->compare('image',$this->image);
-        $criteria->compare('phone',$this->phone);
-        $criteria->compare('location',$this->location);
+		$criteria->compare('phone',$this->phone,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -109,7 +85,7 @@ class Information extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Information the static model class
+	 * @return Model the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
